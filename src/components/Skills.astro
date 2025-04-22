@@ -1,0 +1,45 @@
+---
+import HTML from '../assets/html5.svg';
+import CSS from '../assets/css.svg';
+import JS from '../assets/javascript.svg';
+import ASTRO from '../assets/astro_dark.svg';
+import TAILWIND from '../assets/tailwindcss.svg';
+import GITHUB from '../assets/github_dark.svg';
+import FIGMA from '../assets/figma.svg';
+import PHP from '../assets/php_dark.svg';
+---
+ <span class="absolute -top-3.5 left-9/20 opacity-55 w-min h-min flex items-center justify-center">
+        <HTML width={34} height={34}/>
+    </span>
+    <span class="absolute -bottom-3.5 right-9/20 opacity-55 w-min h-min flex items-center justify-center">
+        <CSS width={34} height={34}/>
+    </span>
+    <span class="absolute top-40 -right-3.5 opacity-55 w-min h-min flex items-center justify-center">
+        <JS width={34} height={34}/>
+    </span>
+    <span class="absolute top-40 -left-3.5 opacity-55 w-min h-min flex items-center justify-center">
+        <ASTRO width={34} height={34}/>
+    </span>
+    <span class="absolute top-3/4 left-4.5 opacity-55 w-min h-min flex items-center justify-center">
+        <TAILWIND width={34} height={34}/>
+    </span>
+    <span class="absolute top-3/4 right-4.5 opacity-55 w-min h-min flex items-center justify-center">
+        <GITHUB width={34} height={34}/>
+    </span>
+    <span class="absolute top-1/6 right-4.5 opacity-55 w-min h-min flex items-center justify-center">
+        <FIGMA width={34} height={34}/>
+    </span>
+    <span class="absolute top-1/6 left-4.5 opacity-55 w-min h-min flex items-center justify-center">
+        <PHP width={34} height={34}/>
+    </span>
+
+<style>
+    span {
+        transition: all 0.3s ease-in-out;
+    }
+    span:hover {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+</style>

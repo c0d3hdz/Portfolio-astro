@@ -1,46 +1,13 @@
 ---
-import HTML from '../assets/html5.svg';
-import CSS from '../assets/css.svg';
-import JS from '../assets/javascript.svg';
-import ASTRO from '../assets/astro_dark.svg';
+import Skills from './Skills.astro';
+import Status from './Status.astro';
 ---
-<section class="relative -mt-36">
+<section class="relative mt-32 Hero">
     <div class="w-90 h-90 rounded-full border-2 border-blue-950 border-dashed flex justify-center items-center overflow-hidden p-16">
         <!-- cambiar imagen -->
         <img src="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4" alt="imagen de Damian" class="aspect-auto w-full h-full object-cover rounded-full" />
     </div>
-    <span class="absolute -top-3.5 left-9/20 opacity-55 w-min h-min flex items-center justify-center">
-        <HTML width={34} height={34}/>
-    </span>
-    <span class="absolute -bottom-3.5 right-9/20 opacity-55 w-min h-min flex items-center justify-center">
-        <CSS width={34} height={34}/>
-    </span>
-    <span class="absolute top-36 -right-3.5 opacity-55 w-min h-min flex items-center justify-center">
-        <JS width={34} height={34}/>
-    </span>
-    <span class="absolute top-36 -left-3.5 opacity-55 w-min h-min flex items-center justify-center">
-        <ASTRO width={34} height={34}/>
-    </span>
-    <article class="absolute -bottom-20 left-1/4  w-fit">
-    <div
-    role="alert"
-    class="bg-green-100 dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-900 dark:text-green-100 p-2 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-200 dark:hover:bg-green-800 transform hover:scale-105"
-    >
-        <svg
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        fill="none"
-        class="h-5 w-5 flex-shrink-0 mr-2 text-green-600"
-        xmlns="http://www.w3.org/2000/svg"
-        >
-        <path
-            d="M13 16h-1v-4h1m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            stroke-width="2"
-            stroke-linejoin="round"
-            stroke-linecap="round"
-        ></path>
-        </svg>
-        <p class="text-xs font-semibold">Disponible para trabajar</p>
-    </div>
-    </article>
+    <!-- Skills------------------------------------------------ -->
+    <Skills/>
+    <Status/>
 </section>
