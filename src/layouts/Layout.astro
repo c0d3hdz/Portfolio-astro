@@ -1,40 +1,40 @@
 ---
 interface Props {
-	title: string;
+    title: string
 }
 
-const { title } = Astro.props;
-import Footer from '../components/footer.astro';
-import '../styles/global.css';
+const { title } = Astro.props
+import Footer from '../components/footer.astro'
+import '../styles/global.css'
 ---
 
 <!doctype html>
-<html lang="en" >
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-	</head>
-	<body class=" flex flex-col min-h-screen">
-		<main class="flex-grow flex flex-col items-center justify-center p-4">
-			<slot />
-		</main>
-		<Footer />
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <main class="flex-grow flex flex-col md:w-3/6 m-auto items-center justify-center p-4">
+            <slot />
+        </main>
+        <Footer />
+    </body>
 </html>
 <style is:global>
-/* *{
+    /* *{
 	outline: red solid 1px;
 } */
-html {
-	scroll-behavior: smooth;
-	scrollbar-width: thin;
-	scrollbar-color: #4f46e5 #e5e7eb;
-}
-body{
-background: #000000;
-background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0, 19, 29) 54%, rgb(3, 38, 57) 100%);
-}
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #4f46e5 #e5e7eb;
+    }
+    body {
+        background: #000000;
+        background: linear-gradient(0deg, rgb(1, 16, 23) 0%, rgb(2, 26, 39) 54%, rgb(3, 38, 57) 100%);
+    }
 </style>
