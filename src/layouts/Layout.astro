@@ -25,16 +25,38 @@ import '../styles/global.css'
     </body>
 </html>
 <style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
     /* *{
 	outline: red solid 1px;
 } */
     html {
         scroll-behavior: smooth;
         scrollbar-width: thin;
-        scrollbar-color: #4f46e5 #e5e7eb;
+        scrollbar-color: #46a0e5 #e5e7eb;
+        font-family: 'Onest', sans-serif;
     }
     body {
         background: #000000;
         background: linear-gradient(0deg, rgb(1, 16, 23) 0%, rgb(2, 26, 39) 54%, rgb(3, 38, 57) 100%);
+    }
+
+    #header-nav {
+        animation: blur linear both 0.5s;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    @keyframes blur {
+        to {
+            backdrop-filter: blur(20px);
+            border-width: 1px;
+            border-color: rgba(0, 0, 0);
+            padding: 0.25rem 0.75rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(229, 229, 229, 0.161);
+            border-radius: 9999px;
+        }
     }
 </style>
