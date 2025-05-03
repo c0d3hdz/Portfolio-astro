@@ -16,11 +16,43 @@ import '../styles/global.css'
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="author" content="c0d3hdz" />
+        <meta name="keywords" content="c0d3hdz, portfolio, desarrollador web, junior, HTML, CSS, JavaScript" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@c0d3hdz" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:creator" content="@c0d3hdz" />
+        <meta name="twitter:url" content="https://c0d3hdz.github.io/" />
+        <meta
+            name="twitter:image:src"
+            content="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4"
+        />
+        <meta name="twitter:image:width" content="400" />
+        <meta name="twitter:image:height" content="400" />
+        <meta name="twitter:image:alt" content="Portfolio de c0d3hdz" />
+        <meta name="og:title" content={title} />
+        <meta name="og:description" content={description} />
+        <meta name="og:url" content="https://c0d3hdz.github.io/" />
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Portfolio de c0d3hdz" />
+        <meta name="og:image" content="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4" />
+        <meta name="og:image:width" content="400" />
+        <meta name="og:image:height" content="400" />
+        <meta name="og:image:alt" content="Portfolio de c0d3hdz" />
+        <meta
+            name="twitter:image"
+            content="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4"
+        />
+        <meta name="twitter:image:alt" content="Portfolio de c0d3hdz" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
     <body class="flex flex-col min-h-screen">
-        <main class="flex-grow flex flex-col md:w-3/6 m-auto items-center justify-center p-4">
+        <main class="flex-grow flex flex-col md:w-3/6 mx-auto items-center justify-center p-4">
             <slot />
         </main>
         <Footer />
@@ -28,9 +60,6 @@ import '../styles/global.css'
 </html>
 <style is:global>
     @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-    /* *{
-	outline: red solid 1px;
-} */
     html {
         scroll-behavior: smooth;
         scrollbar-width: thin;
@@ -47,7 +76,9 @@ import '../styles/global.css'
         animation-timeline: scroll();
         animation-range: 0 500px;
     }
-
+    strong {
+        color: #e5a846;
+    }
     @keyframes blur {
         to {
             backdrop-filter: blur(20px);

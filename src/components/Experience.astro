@@ -1,5 +1,6 @@
 ---
 import ExperienceItem from './ExperienceItem.astro'
+import CVicon from '../assets/file-cv.svg'
 const EXPERIENCE = [
     {
         date: 'Actualmente...',
@@ -21,7 +22,7 @@ const EXPERIENCE = [
 
 <ol class="relative mt-16">
     <h2 class="size-8 text-3xl font-semibold w-full text-start text-white gap-x-3 mb-6" id="Experiencia">
-        💼 Experiencia laboral
+        <CVicon class="w-8 h-8 inline-block" /> Experiencia
     </h2>
     {
         EXPERIENCE.map(experience => (
