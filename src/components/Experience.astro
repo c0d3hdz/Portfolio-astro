@@ -35,13 +35,13 @@ const EXPERIENCE = [
 ]
 ---
 
+<p class="text-3xl font-semibold w-full text-start text-white gap-x-3" id="Experiencia">
+    <CVicon class="w-8 h-8 inline-block" /> Experiencia
+</p>
 <ol class="relative mt-16">
-    <h2 class="size-8 text-3xl font-semibold w-full text-start text-white gap-x-3 mb-6" id="Experiencia">
-        <CVicon class="w-8 h-8 inline-block" /> Experiencia
-    </h2>
     {
         EXPERIENCE.map(experience => (
-            <li class="">
+            <li>
                 <ExperienceItem {...experience} />
             </li>
         ))

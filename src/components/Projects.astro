@@ -7,7 +7,7 @@ import LinkInline from './LinkInline.astro'
 const TAGS = {
     HTML: {
         name: 'HTML5',
-        class: 'bg-amber-500 text-white',
+        class: 'bg-amber-500/60 text-white',
         icon: HTML,
     },
     CSS: {
@@ -29,9 +29,9 @@ const PROJECTS = [
 ---
 
 <section>
-    <h3 class="mt-16 size-8 text-3xl font-semibold w-full text-start text-white gap-x-3 mb-6" id="Proyectos">
+    <p class="mt-16 size-8 text-3xl font-semibold w-full text-start text-white gap-x-3 mb-6" id="Proyectos">
         <CODE class="w-8 h-8 inline-block" /> Proyectos
-    </h3>
+    </p>
     <div>
         <div class="flex flex-col gap-4">
             {
@@ -58,7 +58,7 @@ const PROJECTS = [
                                         </span>
                                     ))}
                                 </div>
-                                <h4 class="text-white text-2xl font-semibold mb-1">{title}</h4>
+                                <h2 class="text-white text-2xl font-semibold mb-1">{title}</h2>
                                 <p class="text-gray-400">{description}</p>
                             </div>
                             <div class="flex space-x-4 gap-2 p-2 rounded-md mt-4">
