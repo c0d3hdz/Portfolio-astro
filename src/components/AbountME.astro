@@ -1,39 +1,34 @@
-<section class="text-blue-50 text-center mt-32 mb-25 font-semibold relative">
-    <span class="text-2xl">Hola mi nombre es <h4 class="text-blue-500 text-4xl">Damian</h4></span>
-    <div class="flex flex-row-reverse px-2.5 py-1">
-        <div class="w-1/2 flex items-center justify-center relative">
-            <div class="blur-sm">
-                <img
-                    src="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4"
-                    alt="imagen de c0d3hdz"
-                    class="w-50 h-80 rounded-2xl shadow-xl shadow-blue-400 object-cover"
-                />
-            </div>
-            <span class="text-2xl rotate-3 absolute text-shadow-md text-shadow-blue-600">Sobre mi</span>
+---
+import AbountMe from '../assets/user-check.svg'
+---
+
+<section class="text-blue-50 py-12 px-2 md:px-0">
+    <h2 class="mt-16 size-8 text-3xl font-semibold w-full text-start text-white gap-x-3 mb-6" id="Sobre-mí">
+        <AbountMe class="w-8 h-8 inline-block" /> Sobre mí
+    </h2>
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-6">
+        <div class="flex-1 px-6 font-light">
+            <p class="text-xl mb-2">Hola, mi nombre es</p>
+            <h3 class="text-3xl text-blue-600 font-bold mb-6">Damian</h3>
+            <p class="mb-4">
+                Hace más de <span class="text-yellow-500 font-semibold">4 años</span> descubrí mi pasión por el desarrollo
+                web, y desde entonces no he dejado de aprender y mejorar constantemente.
+            </p>
+            <p class="mb-4">
+                Me encanta transformar ideas en realidad a través de páginas web funcionales y atractivas.
+            </p>
+            <p>
+                Aunque mi trayectoria aún está en crecimiento, cada día me esfuerzo por adquirir nuevos conocimientos en
+                <span class="text-yellow-500 font-bold">Frontend Developer</span> destacado.
+            </p>
         </div>
-        <article class="text-start text-blue-100 gap-1 flex flex-col items-center justify-center w-1/2">
-            <span
-                ><p>
-                    Hace más de <strong>4 años</strong> descubrí mi pasión por el desarrollo web, y desde entonces no he
-                    dejado de aprender y mejorar constantemente.
-                </p></span
-            >
-            <span>
-                <p>Me encanta transformar ideas en realidad a través de páginas web funcionales y atractivas.</p></span
-            >
-            <span>
-                <p>
-                    Aunque mi trayectoria aún está en crecimiento, cada día me esfuerzo por adquirir nuevos
-                    conocimientos
-                </p>
-                <p>y avanzar hacia mi meta de convertirme en un <strong>Frontend Developer</strong> destacado.</p></span
-            >
-        </article>
+
+        <div class="flex-1 flex justify-center">
+            <img
+                src="https://avatars.githubusercontent.com/u/145168535?s=400&u=454fdad1092fc6cf992e4483ea07c510fd6ce488&v=4"
+                alt="Foto de Damian"
+                class="bg-gray-800/50 w-60 h-70 object-cover rounded-2xl shadow-xl shadow-blue-900 p-1.5 border border-blue-500"
+            />
+        </div>
     </div>
 </section>
-
-<style>
-    p {
-        margin-bottom: 1.5rem;
-    }
-</style>
